@@ -3,63 +3,56 @@
 <head>
     <title> P3471, Assessment 2: Creative Project</title>
     <style>
-        body { 
-            font-family: optima; 
-            margin: 0 20px;
+        body {
+            font-family: optima;
+            margin: 0 100px;
             padding: 0;
             background-color: #304863;
         }
+
         header {
-            background-color: #304863;
-            padding: 20px;
-            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
         }
-        /* Style for the image container */
-        .image-container {
-            text-align: center;
-            margin-bottom: 30px;
+
+        .header-left p {
+            color: white;
+            font-size: 14px;
+            margin: 0 0 10px 0;
         }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px; /* Optional: adds slightly rounded corners */
+
+        .header-left nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 14px;
         }
-		h5 {
-			color: white;
-			text-align: left;
-		    font-family: optima;
-            background-color: #304863;
-		}
-	    h6 {
-		    color: white ;
-			text-align: right;
-		    font-family: optima;
-            background-color: #304863;
-		}
-		p {
-			color: white;
-			font-family: optima;
-		}
-		a {
-    		color: white;
-    		text-decoration: none;
-		}
+
+        .header-left nav a:hover {
+            text-decoration: underline;
+        }
+
+        .header-right img {
+            height: 60px;
+        }
     </style>
 </head>
 <body>
 	<header>
-		<div style="clear: both">
-			<h5 style="float: left"> P3471: Digital Tools and Data Journalism
-				<a href="https://nidsontheweb.github.io/p3414-assignment-2-story-1/"> Story 1 </a>
-				<a href="https://nidsontheweb.github.io/p3414-assignment-2-story-2/"> Story 2 </a>
-		 			<a href="https://www.strath.ac.uk/"> 
-			 			<img src="university-of-strathclyde-logo.png" alt="University of Strathclyde logo" width="50" height="60">
-					</a>
-			</h5>
-			<h5 style="float: right"> Assessment 2: Creative project </h5>
-			<h6> 202208970 </h6>h6>
-		</div>
-		<hr />
-	</header>
+        <div class="header-left">
+            <h5>P3471: Digital Tools and Data Journalism</h5>
+            <nav>
+                <a href="https://nidsontheweb.github.io/p3414-assignment-2-story-1/">Story 1</a>
+                <a href="https://nidsontheweb.github.io/p3414-assignment-2-story-2/">Story 2</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="https://www.strath.ac.uk/">
+                <img src="university-of-strathclyde-logo.png" alt="University of Strathclyde logo">
+            </a>
+        </div>
+    </header>
 </body>
 </html>
