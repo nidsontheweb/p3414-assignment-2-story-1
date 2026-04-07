@@ -2,18 +2,46 @@
 <html>
 <head>
 <title>P3471, Assessment 2: Creative Project</title>
+<!--Google font: Coda-->>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: optima;
-    margin: 0 0px;
+    font-family: 'Coda', cursive;
+    margin: 0;
     padding: 0;
     background-color: black;
 }
-p{
+
+p {
     color: white;
-    font-size: 8px;
     margin: 30px;
-    gap: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.page-break {
+    margin: 0 30px;
+}
+.page-break img {
+    width: 100%;
+    height: 7vh;
+    display: block;
+}
+
+header p {
+    color: white;
+    margin: 0;
+    font-size: 8px;
+}
+hr {
+    margin: 60px 200px;
+    border-top: 2px solid white;
 }
 header {
     display: flex;
@@ -22,7 +50,8 @@ header {
     padding: 10px 0;
     background-color: black;
     margin: 30px;
-    h5 {
+}
+header h5 {
     color: white;
     font-size: 10px;
     margin: 0;
@@ -33,12 +62,12 @@ header {
 }
 .header-left nav a {
     color: white;
-    text-decoration: none;
     font-size: 10px;
 }
 .header-left nav a:hover {
     text-decoration: underline;
 }
+
 .header-center img {
     height: 60px;
 }
@@ -50,46 +79,286 @@ header {
     align-items: center;
     gap: 10px;
 }
-h6 {
+header h6 {
     color: white;
     font-size: 10px;
-    margin: 0;
+    margin: 0 30px;
 }
-}
-.hero{
+
+.hero {
     background-image: url('header-background.png');
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
 }
 .hero h1 {
     color: white;
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     margin: 0;
     padding: 200px 0 30px 0;
 }
 .hero h2 {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin: 0;
-    padding: 0px 0 30px 0;
+    padding: 0 0 30px 0;
 }
-.hero h3 {
+.hero img {
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.intro-img {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    margin: 30 60px;
+}
+.intro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#section-1 {
+    display: flex;
+    align-items: center;
+    /*background-image: url('intro-bg.png');
+    background-size: cover;
+    background-position: center;*/
+}
+.section-1-text {
+    flex: 2;
+    text-align: left;
+    margin: 30px;
+}
+.section-1-chart {
+    flex: 2;
+    max-width: 400px;
+    max-height: 650px;
+    margin: 60px;
+}
+
+#stat-section {
+    display: flex;
+    align-items: center;
+    padding: 0 450px 30px 60px;
+}
+.stat-number h1 {
+    font-size: 120px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+}
+.stat-number h2 {
+    font-size: 100px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-text p {
+    font-size: 17px;
     color: white;
-    font-size: 15px;
+}
+
+#section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 0 0;
+}
+.section-2-text {
+    flex: 2;
+    text-align: right;
+}
+.section-2-chart {
+    flex: 2;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 60px;
+    align-items: left;
+}
+
+#stat-section-2 {
+    display: flex;
+    align-items: center;
+    margin: 60px 30px 60px 30px;
+    gap: 30px;
+}
+.stat-number-2 h1 {
+    font-size: 120px;
+    color: #9ADC00;
+    margin: 0 0 0 30px;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-number-2 h2 {
+    font-size: 70px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-text-2 p {
+    font-size: 17px;
+    color: white;
+    text-align: left;
+}
+.stat-chart-2 {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 60px;
+}
+
+#section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0 0;
+}
+.section-3-text {
+    flex: 2;
+    text-align: right;
+    margin: 30px;
+}
+.section-3-chart {
+    flex: 2;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 60px;
+    align-items: left;
+}
+
+#section-3-1 {
+    display: flex;
+    justify-content: center;
+}
+.section-3-1-chart {
+    flex: 1;
+    max-width: 800px;
+    margin: 130px 30px 0 30px;
+}
+
+#stat-section-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 30px 0 30px;
+    align-items: center;
+}
+.stat-3-breaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.stat-3-breaker img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.stat-item-3 {
+    flex: 1;
+}
+.stat-item-3 h1 {
+    font-size: 100px;
+    color: #9ADC00;
+    margin: 30px;
+    line-height: 0.9;
+    text-align: center;
+}
+.stat-item-3 h2 {
+    font-size: 30px;
+    color: #9ADC00;
+    margin: 30px;
+    line-height: 1.2;
+    text-align: center;
+}
+.stat-text-3 p {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+.stat-chart-3 {
+    flex: 1;
+    min-width: 200px;
+    margin: 30px 30px;
+}
+.stat-3-breaker{
+    width: 10px;
+    height: 10px;
+    margin: 30px;
+}
+
+#stat-section-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 30px 0 30px;
+    align-items: center;
+}
+
+#section-4{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 60px 30px 0 30px;
+    align-items: center;
+}
+.section-4-text{
+    flex: 2;
     text-align: center;
     margin: 0;
-    padding: 0px 0 30px 0;
 }
-.intro{
-    width: 100vw;
-    height: 100vh; 
+.section-4-text p{
+    font-size: 17px;
+}
+.section-4-stat h1{
+    font-size: 100px;
+    color: #9ADC00;
+    line-height: 0.9;
+    text-align: left;
+    margin: 0 20px;
+}
+.section-4-stat h2{
+    font-size: 30px;
+    color: #9ADC00;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0 30px;
+}
+.section-4-chart{
+    flex: 1;
+    min-width: 300px;
+    margin: 0 36px 0 30px;
+}
+.section-4-chart-1{
+    flex: 1;
+    max-width: 1080px;
+    margin: 120px 30px 0 30px;
+}
+.section-4-chart-2{
+    flex: 1;
+    max-height: 120px;
+    max-width: 1080px;
+    margin: 0 30px 30px 30px;
 }
 </style>
-</head>]
+</head>
 
 
 <body>
@@ -113,13 +382,150 @@ h6 {
 </header>
 
 <div class="hero">
-    <h1>GENDER INEQUALITIES IN UK ELECTRONIC MUSIC</h1>
-    <h2>bleh bleh bleh bleh bleh bleh bleh</h2>
+    <h1>The Numbers Behind Electronic Music's Gender Problem</h1>
+    <h2>The UK's electronic music scene has a diversity problem — and the data make for uncomfortable listening.</h2>
     <a href="#intro">
         <img src="down-arrow.png" alt="click to scroll">
     </a>
+    <br><br><br><br><br><br>
+    <hr>
+</div>
+
 <div id="intro">
-    <p></p>
+    <p style="font-size: 25px;">Electronic or dance music is a group of music genres that are created and produced by using electronic or electromechanical instruments. Equipment used to make such music includes electronic oscillators, synthesisers, electronic pianos or guitars, computers and music making software. The genre has evolved with the advent of new technologies from the 19th century to present day.</p>
+    <br>
+    <div class="intro-img">
+        <img src="female-dj-nightclub-full.png">
+    </div>
+    <br>
+    <p style="font-size: 25px;">This genre of music has become a global phenomenon but developed into a vast and diverse industry – encompassing many subgenres and cultures – in the UK. Dance music has become a network of artists, producers, DJs, organisations like record labels and distribution agencies, as well as a large part of nightlife culture - including clubs, pubs and festivals. </p>
+</div>
+</div>
+
+<div class="page-break">
+    <img src="page-break.png">
+</div>
+
+<div id="section-1">
+    <div class="section-1-text">
+        <p>The UK music industry grossed £8 billion in the UK in 2024, a 5% increase in figures since the previous year. More than 200,000 people work in music in the UK.</p>
+        <p>In 2025, the UK Electronic Music Report found a £2.5 billion economic contribution, a 3% increase.</p>
+        <p>The UK's music exports like recorded music and music publishing showed an 8% growth between 2024 and 2025, showing its incredible scale as compared to international exports.</p>
+        <p>There have been rapid developments in music genres invented or developed in the UK as well. The consumption of such genres are increasing worldwide, according to the UK Electronic Music Report.</p>
+    </div>
+
+    <div class="section-1-chart">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27820769">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/27820769/thumbnail" width="100%" height="50%" alt="visualization"/></noscript>
+        </div>
+        <br>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28382508">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/28382508/thumbnail" width="100%" height="50%" alt="visualization"/></noscript>
+        </div>
+    </div>
+</div>
+
+ <div id="stat-section">
+    <div class="stat-number">
+        <h1>10.5</h1>
+        <h2>%</h2>
+    </div>
+    <div class="stat-text">
+        <p>The report also finds a 10.5% increase in music events yearly, with 29,499 in 2024 to 32,601 events in 2025, evidencing the growth of this sector if music within recent years.</p>
+        <p>Electronic music and the stakeholders involved are, therefore, becoming a part of a million-dollar industry.</p>
+    </div>
+</div>
+
+<div class="page-break">
+    <img src="page-break.png">
+</div>
+
+<div id="section-2">
+    <div class="section-2-chart">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28383018"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28383018/thumbnail" width="100%" alt="visualization" /></noscript></div>
+    </div>
+    <div class="section-2-text">
+        <p>The Women Musicians Insight Report show demographic breakdowns of different self-reported genders. Women tended to be represented in younger age brackets, with two-thirds (69%) of respondents belonging to the 25-26 year age bracket. But women tend to have little security over income in music sectors, especially due to the prevelance of freelancers. In another survey by the Musicians' Union, nearly two-thirds of respondents (61%) believed freelancers face a heightened risk of sexual harassment.</p>
+        <p>Moreover, with men earning slightly more overall. The average annual income of men was reported to be £21,750. In contrast, women earn £19,850 on average. Other reports have also found underrepresentation of women in this sector in earlier years.</p>
+    </div>
+</div>
+
+<div id="stat-section-2">
+    <div class="stat-number-2">
+        <h1>79%</h1>
+        <h2>vs 19%</h2>
+    </div>
+    <div class="stat-text-2">
+        <p>Only 19% of women earn above £70,000 while 79% of men earn higher figures, showing a greater disparity in high income workers. While such a significant gap does indicate to the presence of income inequalities, the problem is more complex. Men also make up the highest proportion of the lowest earners (less than £7,000) each year from music.</p>
+        <p>This may indicate toward men being more likely to have other sources of income in order to maintain their music career.</p>
+    </div>
+    <div class="stat-chart-2">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28383482"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28383482/thumbnail" width="100%" alt="visualization" /></noscript></div>
+    </div>
+    </div>
+
+<div class="page-break">
+    <img src="page-break.png">
+</div>
+
+<div id="section-3">
+    <div class="section-3-chart">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28385102"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28385102/thumbnail" width="100%" alt="visualization" /></noscript></div>
+    </div>
+    <div class="section-3-text">
+        <p>The Musicians' Union found most respondents had been victims of misogyny or sexism (90%) ,in a survey totalling 80 female and non-binary respondents. Almost half of them (48%) had been sexually harasses while working in the industry, most who experienced it didn’t report it (85%), and over half had witnesses it (56%).</p>
+        <p>Anecdotal accounts involve reports of individuals being humiliated in public, isolated, and ridiculed in front of colleagues on account of their gender. There were also accounts of sexual harassment by colleagues, employers and audience members, ranging from sexually explicit jokes, unwanted touching, being showed videos of an explicit nature to assault and rape.</p>
+    </div>
+</div>
+<br>
+<div id="section-3-1">
+    <div class="section-3-1-chart">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28390025"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28390025/thumbnail" width="100%" alt="visualization" /></noscript></div>
+    </div>
+</div>
+<br>
+<div id="stat-section-3">
+    <div class="stat-item-3">
+        <h1>56%</h1>
+        <h2>cited workplace culture as the barrier to reporting incidents</h2>
+    </div>
+    <div class="stat-3-breaker">
+        <img src="yellow-dot.png">
+    </div>
+    <div class="stat-item-3">
+        <h1>40%</h1>
+        <h2>said their fear of losing work was the reason for not reporting</h2>
+    </div>
+</div>
+
+<div class="page-break">
+    <img src="page-break.png">
+</div>
+
+<div id="section-4">
+    <div class="section-4-stat">
+        <h1>10%</h1>
+        <h2>in 2013</h2>
+    </div>
+    <div class="section-4-text">
+        <p>The FACTS report is a volunteer-run project started by female:pressure – an initiative and transnational network of individuals from a diverse array of genders, and occupations in music and the arts. FACTS is its sixth edition and has been updating since 2013. The 2013 report found that only 10% of acts at electronic music festivals worldwide were women. The edition released in 2024 spanning 56,457 artists from 1008 festivals in the time span of the two previous years. </p>
+    </div>
+    <div class="section-4-chart">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28396091"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28396091/thumbnail" width="100%" alt="visualization" /></noscript></div>
+    </div>
+</div>
+<hr>
+<div class="section-4-chart-1">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28395036"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28395036/thumbnail" width="100%" alt="visualization" /></noscript></div>
+</div>
+<hr>
+<p>Among worldwide results, the 2024 report found female acts to be in the minority (29.8%) but the total number of women at music festivals has experienced a steady increase since 2012, with the number of male artists decreasing.</p>
+<p>In the UK, however, an analysis of UK festival data shows a relative picture. The share of male artists has, indeed, decreased over time at most festivals. Men still occupy the majority of acts at most festivals, though. Sharp declines in the share of female acts can be seen between 2014 and 2016 at festivals like Wysing Polyphonic. Non-binary and mixed percentages see negligible changes at most festivals in representation. Moreover, as the average number of acts at UK music festivals increases, the share of female and non-binary artists decreases while numbers on male artists shows an upward trend.</p>
+<hr>
+<div class="section-4-chart-2">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28395177"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28395177/thumbnail" width="100%" alt="visualization" /></noscript></div>
 </div>
 </body>
 </html>
